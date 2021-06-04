@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Petite Treats - Signup</title>
+  <script src="javascript.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+</head>
+
+<body>
+
+	<div class="navbar" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="specials.html">Current Specials</a>
+    <a href="about.html">About Us</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+  </div>
+  <div class="containerbtn"> <img src="images/logo2.png" style="max-width:100%;height:auto;">
+		<a href="signup.html">
+			<button class="button" style="vertical-align:middle"><span>Newsletter Signup</span></button>
+		</a>
+	</div>
+
+<br>
+<br>
+
+<div class="centered">
+<div class="container">
+    <h1>Signup for our specials newsletter</h1>
+    <p>Please complete the form below to join the newsletter.</p>
+    <hr>
+    <form name="signupForm" action="newsletter.php" onsubmit="return validateForm()" method="post">
+    <label for="name"><b>Name:</b></label>
+    <input type="text" placeholder="Enter Your Name" name="name" id="name">
+    <br>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Your Email" name="email" id="email">
+    <br>
+    <label for="products"><strong>Which products are you interested in?</strong></label>
+    <br>
+    <input type="checkbox" id="Custard Tart" name="products1" value="Custard Tart, ">
+    <label for="Custard Tart">Custard Tart</label><br>
+    <input type="checkbox" id="Apple Cake Slice" name="products2" value="Apple Cake Slice, ">
+    <label for="Apple Cake Slice">Apple Cake Slice</label><br>
+    <input type="checkbox" id="Randy Tart" name="products3" value="Randy Tart, ">
+    <label for="Randy Tart">Randy Tart</label><br>
+    <input type="checkbox" id="Vanilla Slice" name="products4" value="Vanilla Slice, ">
+    <label for="Vanilla Slice">Vanilla Slice</label><br>
+    <label for="birthday"><strong>Birthday:</strong></label>
+    <input type="date" id="birthday" name="birthday">
+    <br>
+    <br>
+    <div>
+      <input type="checkbox" name="agree" id="agree" value="yes" />
+      <label for="agree">I agree to the terms and conditions</label>
+      <div style="visibility:hidden; color:red" id="agree_chk_error">
+        Can't proceed as you didn't agree to the terms!
+      </div>
+    <p>By submitting this form you agree to all marketing.</p>
+    <button type="submit"
+    class="registerbtn">Submit</button>
+    </form>
+    </div>
+</div>
+
+<div class="footer">
+	<p class="footer-text-left">
+		<a href="index.html">Home</a>
+    	<a href="menu.html">Menu</a>
+    	<a href="specials.html">Current-Specials</a>
+    	<a href="about.html">About-Us</a>
+  	</p>
+  	<div class="footer-text-right">
+  		<p><strong>Contacts:</strong> 0455 5555 555 <strong>Catering:</strong> 0433 3333 333</p>
+  		<p><strong>Address:</strong>123 Prize Lane, Kirwan, QLD</p>
+  	</div>
+</div>
+</body>
